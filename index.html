@@ -1,0 +1,2951 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Python</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:400,700|Fira+Mono" rel="stylesheet">
+		<link rel="stylesheet" href="../../css/reveal.css">
+		<link rel="stylesheet" href="../../css/theme/sait.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../../lib/css/vs2015.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../../css/print/pdf.css' : '../../css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="center" data-background-color="#222">
+					<div data-markdown>
+						<textarea data-template>
+							# Welcome
+							## CPRG-100: Introduction to Python
+						</textarea>
+					</div>
+
+				
+					<aside class="notes" data-markdown>
+						
+					</aside>
+				</section>
+				<section class="center" data-background-color="#222">
+					<div data-markdown>
+						<textarea data-template>
+							## Course Information
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Grading
+							
+							| Activity                   | Points   |
+							|----------------------------|----------|
+							| Assignment 1               | 25%      |
+							| Assignment 2               | 25%      |
+							| Assignment 3               | 50%      |
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Resources
+							Slides, problem sets/assignments, and additional resources can be found on the Brightspace/D2L website.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section class="center" data-background-color="#222">
+					<div data-markdown>
+						<textarea data-template>
+							## What is Python?
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						Python is a computer language. It's a series of instructions that tells the computer to do something like:
+						- displaying text
+						- moving an image
+						- asking the user for information
+
+						It can be used for system administration, 3d animation and image editing, scientific computing, web development and game development.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Example Python Code
+
+							```python
+							def main():
+								print("Hello World!");
+
+							main()
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						Generally speaking, the computer reads each line of code from top to bottom, working out what action you want to take on each line, and then taking that action. This is called running or executing your code.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+								### Example: Draw a Square
+								<div style="height:200px;width:200px;border:5px solid black; float:right;"></div>
+								1. Find a whiteboard and a dry erase marker.
+								2. Uncap the dry erase maker.
+								3. Hold the marker in your hand.
+								4. Place the marker against the whiteboard.
+								5. Move your hand 1 foot to the right.
+								6. Stop.
+								7. Move your hand 1 foot down...
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Interpreted vs Compiled Languages
+
+							**Interpreted**
+							- Python, JavaScript, Ruby, PHP
+
+							**Compiled**
+							- C#, Java
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						Python is an interpreted language. Your computer doesn't understand Python, so it needs something to interpret the code and convert it to machine code. This conversion happens at the time your code is executed. JavaScript, PHP and Ruby are also interpreted languages.
+
+						In a compiled language (like C# and Java) the code is converted to machine code BEFORE it's excuted.
+
+						Interpreted languages run a little slower than a compiled program, but you won't need to wait for your program to compile to run the code. If you need to quickly program a solution to some problem, python is a good choice.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### A Brief History of Python
+							- late 1980s: designed by Guido van Rossum
+							- Fun fact: Python is not named after the snake. It's named after Monty Python.
+							- 1991: Python 0.9.0 released
+							- 2000: Python 2.0 released - used for a long time and you will come across many tutorials that still use Python 2.0 so be aware
+							- 2008 - Python 3.0 released - similar to Python 2.0 but there are subtle differences
+
+							We will be using Python 3 in this class. If you look up any tutorials online, make sure to specify that you're using Python 3.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Some Programming Tips
+
+							- **Attention to Detail**: Pay attention to the tiny details. 90% of bugs are spelling mistakes, indentation errors, misplaced punctuation, wrong capitalization and similar errors.
+							- **Your Code Will Have Bugs**: No programmer writes perfect code. Use the skills you'll learn in this class to try to solve the problem by yourself before turning to Google. Then, try researching the issue on Google before turning to others for help.
+							- **Practice, Practice, Practice**: If you finish the activities and assignments early, think about what else you can do to improve the program. Keep practicing so you can keep learning.
+
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- Being able to debug your own code is one of the most important skills you can have as a programmer. Practice debugging and this will speed up your Python knowledge gain.
+					</aside>
+				</section>
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### What tools do you need?
+							
+							To work with Python, you need to install:
+							- Python
+							- a text editor
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						I'm going to walk you through setting up Python on your computer. For text editors, we will be using VS Code. It may already be installed on your computer.
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Install Python
+
+							1. Open up a command prompt on your computer. 
+							2. Type ```python``` and press ```Enter```. If you get a message saying ```'python' is not recognized as an internal or external command, operable or batch file.``` then you need to install Python. If you don't get this message, let me know.
+							3. To install Python, go to https://www.python.org/downloads/ and download and install the latest version of python (3.7.3). **Check the box that says add Python 3.7 to your path.**
+							4. In your command prompt, run ```python```. If it does not run, let me know. You may need to reinstall if you forget to check the box that says "Add python to the PATH".
+							5. Type `3+3`. What do you see?
+							6. Type `exit()` to exit python.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section data-background-color="#caedf5">
+					<div data-markdown>
+						<textarea data-template>
+							### Activity - Create Your First Script
+
+							1. Make a folder on your desktop called `sait-python`
+							2. Inside this folder, make a new file called `hello.py`.
+							3. Write this code in your new python file and save.
+							```python
+							print("Hello World")
+							```
+							4. In your terminal, type:
+							```cmd
+							python Desktop/sait-python/hello.py
+							```
+							5. What do you see?
+							6. Make your script print another line.
+							7. Put an # (octothorpe, pound, hash, etc.) character at the beginning of a line. What did it do?
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- The python command allows us to run the program found inside hello.py.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Code Comments
+
+							It's important to document your code! The way programmers do this is through comments.
+
+							```python
+							# This is a comment. It begins with an octothorpe. It should be used to describe the code below it.
+							print("This is printing out some text.")
+
+							# Python's style guide recommends using the # sign per line of comment
+							#
+							# You can use the # sign on an otherwise empty line to make breaks between paragraphs (as seen above).
+							```
+
+							As we're going through different code examples, create comments to take notes on your code. Especially anything that's confusing!
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Python Variables
+
+							- Assign a value to a new variable:
+							
+							```python
+							x = 2
+							print(x)
+							```
+
+							- Reassign the value later:
+							
+							```python
+							y = 5
+							y = 1
+							print(y)
+							```
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- Use variables to store values. A variable is a named location that reserves memory to store references to a value.
+						- The value of a variable can change over time.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Assign Multiple Values
+
+							- Assign a value to multiple variables:
+							
+							```python
+							x = y = z = 10
+							print(x)
+							print(y)
+							print(z)
+							```
+
+							- Assign multiple values to multiple variables:
+							
+							```python
+							x, y, z = 1, "Python", 999.99
+							print(x)
+							print(y)
+							print(z)
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Rules for Variable Names
+
+							- begin with letters or _
+							- only contain letters, numbers, and _
+							- case sensitive
+							- avoid reserved words ([list of Python keywords](http://www.pythonkey.com/python-identifiers-keywords/#keywords-list))
+							- choose names for clarity and meaning (generally avoid single letter variable names (e.g. `a = 2`))
+							- prefer underscore for multiple_words (instead of camelCase)
+							- pick a naming convention and stick with it
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Examples of Variable Names
+							OK:
+							```python
+							num_people = 5
+							_num = 10
+							assignment_10 = True
+							```
+							Not OK:
+							```python
+							2_cool_for_school = True
+							so_happy! = False
+							$school = "Sait"
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Clearing and Deleting Values
+
+							- You can clear values from variables
+
+							```python
+							x = 5
+							x = None
+							print(x)
+							print(type(x))
+							```
+
+							- You can also delete variable entirely
+							```python
+							y = 10
+							del y
+							print(y)
+							```
+
+							While x still exists (but has no value), y doesn't exist at all. X has a special type called NoneType.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							 ### Activity: Create a Variable
+
+							 - In your .py file, create a variable and give it a valid name and value.
+							 - Then, print the value.
+							 - What happens if you use an invalid name?
+							 - Try clearing and deleting your variable.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section class="center" data-background-color="#222">
+					<div data-markdown>
+						<textarea data-template>
+							## Data Types
+
+							1. number
+							2. string
+							3. list
+							4. tuple
+							5. dictionary
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- We're going to cover 5 main data types in Python. Numbers, strings, lists, tuples, and dictionaries.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Number
+
+							- Python supports 3 different numerical types
+								- **int** (plain integers): positive or negative whole numbers
+								- **float** (floating point values): written in decimal points
+								- **complex** (complex numbers): take the form of x + yJ where x and y are floating numbers and J represents the square root of -1 (an imaginary number). Not used much in Python programming.
+
+							```python
+							x = 1
+							print(type(x))
+							y = 1.5
+							print(type(y))
+							z = 1+2J
+							print(type(z))
+							```
+							You can use the built-in `type()` method to see what type each piece of data is.
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section class='center' data-background-color='#222222'>
+					<div data-markdown>
+						<textarea data-template>
+							## Operators
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- Now that we have our first data type (numbers), let's pause to talk about what we can do with this data using different operators.
+					</aside>
+				</section>
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Arithmetic Operators
+
+							- `+` plus
+							- `-` minus
+							- `/` divide
+							- `*` multiply
+							- `%` modulus (the remainder after dividing num1 by num2)
+							- `**` exponent
+							- `//` floor division (rounds down to nearest whole number)
+
+							```python
+							a = 3+2   # 5
+							b = 5.5/2 # 2.75
+							c = 2%2   # 0 (the remainder after dividing 2 by 2)
+							d = 3//2  # 1 (1.5 rounds down to 1)
+							e = 3**2  # 9 (3 to the power of 2)
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- There are a lot of math symbols that you can use to do math in Python.
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Let's Do Some Math
+
+							1. In your `hello.py` file:
+								- print 5 divided by 2
+								- print the remainder after dividing 9 by 5
+								- print 10 to the power of 100
+							2. Print the type of each answer.
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Comparison Operators
+
+							- `==` equal to
+							- `!=` not equal to
+							- `>` greater than
+							- `<` less than
+							- `>=` greater than or equal to
+							- `<=` less than or equal to
+							```python
+							a = 2 == 3 # False
+							b = 2 != 3 # True
+							c = 2 > 3  # False
+							d = 2 < 3  # True
+							e = 2 >= 3 # False
+							f = 2 <= 3 # True
+							```
+
+							- Boolean Type
+							```python
+							a = 2 == 3
+							print(type(a))
+							```
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Let's Compare
+
+							1. In your `hello.py` file print the following tests:
+								- Is 20 greater than 11?
+								- Is 20 equal to 20?
+								- Is 7 not equal to 11?
+							2. Print the type of each answer.
+
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Assignment Operators
+
+							Used to directly assign the answer of an operation to another varibable or to assign the value of one variable to another.
+
+							- `=` assign a value to the variable
+							- `+=` take the variable's value and add a new value to it
+							- `-=` subtract a new value from the variable's value
+							- `*=` multiply the variable's value by a new value
+							- `/=` divide the variable's value by a new value
+							- `%=` get the remainder of the variable's value divided by a new value
+							- `**=` get the variable's value raised to a new value
+							- `//=` get the variable's value divided by a new value and round down
+
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Assignment Operators
+							
+							Here's some examples of how assignment operators work.
+
+							```python
+							a = 1   # a equals 1
+							b += 1  # b equals b + 1
+							c -= 1  # c equals c - 1
+							d *= 1  # d equals d * 1
+							e /= 1  # e equals e / 1
+							f %= 2  # f equals the remainder of f / 2
+							g **= 2 # g equals g to the power of 2
+							h //= 2 # h equals h / 2 (rounded down)
+							```
+
+							1. Create the variable a and assign it the value of 5.
+							2. Assign a the remainder after dividing a by 1.5.
+							3. Assign a the value of a to the power of 3.
+							4. Assign a the value of a multiplied by 70.
+							4. Assign a the value of a divided by 2 (and round down).
+							5. What is a?
+						
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Bitwise Operators
+
+							- Used to perform bitwise logical operations on integers. Whenever you need to control specific bits.
+							- Much less used than arithmetic operators.
+							- Used more often in low-level programming (like when working on embedded devices)
+
+							We're not going to get into that here since it's a more advanced topic, but you should know that they exist.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section class='center' data-background-color='#222222'>
+					<div data-markdown>
+						<textarea data-template>
+							## Back to Data Types
+
+							1. number
+							2. string
+							3. list
+							4. tuple
+							5. dictionary
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Strings
+
+							- Strings are a list of characters and can use any symbol.
+							```python
+							greeting = "Hello World"
+							```
+							- Often used to store words or sentences
+							- A number represented as a string can't be used to do math because it's a string, not a number.
+
+							```python
+							sentence = "This is a string."
+							x = "3"
+							print(type(x))
+							```
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Manipulating Strings
+
+							#### Slicing Strings
+							- Take part of the string and ignore the rest
+							
+							```python
+							string[a:b]  # returns part of the string from the a character to the b character, including a but excluding b
+							string[:b]   # if you omit the first index, the slice starts at the beginning of the string
+							string[a:]   # if you omit the second index, the slice goes to the end of the string
+							```
+
+							<small>In python, start counting indices from 0. The first letter in a string is in the 0 index. The 2nd letter in a string is in the 1st index.</small>
+
+							```python
+							greeting = "Hello Beautiful World!"
+							short_greeting = greeting[:5]
+							greeting_adjective = greeting[6:15]
+							greeted = greeting[16:]
+							print(short_greeting, greeting_adjective, greeted)
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- Strings often need to be manipulated to either provide dynamic text to the user, or extract data from text that the user provides
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Manipulating Strings
+
+							#### Concatenating Strings
+							- Add two strings together
+
+							```python
+							old_string = "Here is some text."
+							new_string = old_string + " And here is some extra text."
+							print(new_string)
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Beware Math with Strings
+
+							If you try to perform math with strings, you may find some weird things happening in your code. Always check to make sure you used a number when you want a number, not a string.
+
+							```python
+							a = "4"
+							b = 2
+							print(a*b) # 44 because you are printing `a` twice.
+
+							x = "4"
+							y = 2
+							print (x+y) # TypeError because you can't concatenate a number to a string or add a string to a number
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Making Strings
+
+							1. Create a variable called my_first_name and assign it the value of your first name.
+							2. Create a variable called my_last_name and assign it the value of your last name.
+							3. Create a variable called my_full_name and assign it the value of my_first_name and my_last_name concatenated together.
+							4. Print the last 3 characters in your full name.
+							5. Try printing the middle 3 characters of your full name.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Lists
+
+							- Lists hold lists of data
+							- lists can contain multiple data types (like numbers and strings and even other lists)
+
+							```python
+							fruits = ["Apples", "Oranges", "Bananas"]
+
+							numbers = [1, 2, 3]
+
+							favorite_things = ["red", "video games", "tea"]
+
+							superman = ["Superman", 84, True, ["Batman", "Robin"]]
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Getting Information from a List
+
+							Similar to strings, we can also get items in a list.
+							
+							```python
+							list = ['abcd', 786, 2.23, ['John', 70.2, True]]
+							tiny_list = [123, 'Smith', False]
+
+							# Python uses zero-based indexing (the first item is 0)
+							first_item = list[0]
+							second_and_third = list[1:3] # includes index 1 through 3, excluding 3
+							name = list[3][0] # access item from multi-dimensional array
+							double_tiny_list = tiny_list * 2
+							large_list = list + tiny_list
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Manipulating Lists
+
+							- Create new items in the list
+
+							```python
+							# Add 1 item to the list
+							fruits = ["oranges", "apples", "bananas"]
+							fruits.append("watermelon")
+
+							# Add multiple items to the list
+							fruits.extend(["canteloupe", "pineapple"])
+
+							# Insert item in a particular spot in the list
+							fruits.insert(3, "kiwi") # kiwi becomes the 4th item in the list
+							```
+
+							- Remove an item from the list
+
+							```python
+							# Remove item if you know which item you want to remove
+							fruits.remove("watermelon")
+
+							# Remove item in specific index
+							fruits.pop(2)
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- Print after each demo to show what's happening after each command
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Manipulating Lists
+
+							- Update item in list
+
+							```python
+							# Access item in specific index and assign it a new value
+							fruits[2] = "mango"
+							print(fruits)
+							```
+
+							<small><a href="https://developers.google.com/edu/python/lists#list-methods" target="_blank">Other List Methods</a></small>
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Create a List
+
+							Print your list after each task.
+
+							1. Create a list of 3 of your favorite foods.
+							2. Add an item to the list.
+							3. Remove an item from the list.
+							4. Add 2 items to the list at the same time.
+							5. Remove an item in index 2.
+							6. Change the value of the item in index 1.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Tuple
+
+							- Similar to lists but cannot be updated
+							- Read-only
+
+							```python
+							vegetables = ( 'carrots', 'broccoli', 'celery')
+							print(vegetables)
+							```
+
+							You cannot change items in a tuple.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Getting Info from Tuple
+
+							Similar to strings and lists, we can also get slices of a tuple or concatenate tuples.
+
+							```python
+							tuple = ('abcd', 786, 2.23, ['John', 70.2, True])
+							tiny_tuple = (123, 'Smith', False)
+
+							# Python uses zero-based indexing (the first item is 0)
+							first_item = tuple[0]
+							second_and_third = tuple[1:3] # includes index 1 through 3, excluding 3
+							name = tuple[3][0] # access item from multi-dimensional array
+							double_tiny_tuple = tiny_tuple * 2
+							large_tuple = tuple + tiny_tuple
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Manipulating Tuples
+
+							- Unlike lists, we cannot create new items, update, or remove items from a tuple.
+
+							```python
+							tuple = ('abcd', 786, 2.23, ['John', 70.2, True])
+							tuple.append("cauliflower") # AttributeError: 'tuple' object has no attribute 'append'
+							```
+
+							- Weirdly, you can manipulate lists within a tuple
+
+							```python
+							tuple[3].append("whoa!")
+							print(tuple)
+							```
+
+							This is because that list can still be found in the same location in memory, even if you changed the list itself. 
+
+							<small>Additonal Reading: <a href="https://standupdev.com/wiki/doku.php?id=python_tuples_are_immutable_but_may_change" target="_blank">Python tuples are immutable but may change</a></small>
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- For now, we don't really need to get into why lists can be manipulated inside tuples, but if you want to understand this in more depth, here's a great resource.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Lists vs Tuples
+
+							- General rule of thumb: If you don't need to change the items in the list of values, use a tuple instead of a list.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Create a Tuple
+
+							Print your tuple after each task.
+
+							1. Create a tuple with 3 items:
+								- a string
+								- a number
+								- a list of 3 items
+							2. Print a slice of the tuple with just the last item in it.
+							3. Try using the list insert method to add an item to your tuple. What error do you get?
+
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Dictionaries
+
+							- Dictionaries are a type of collection that work with a key-value pair
+							- Used if you want to associate one value with another
+							- You can store any type of data in a dictionary
+							- Keys must be unique
+
+							```python
+							favorites = {'vegetable': 'celery', 'fruit': 'apples', 'tv show': 'Leverage', 'number': 16}
+							```
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- This allows us to create a collection of items.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Getting Information from a Dictionary
+							
+							```python
+							favorites = {'vegetable': 'celery', 'fruit': 'apples', 'tv show': 'Leverage', 'numbers': [1, 16], 'books': {'scifi': 'Red Shirts' , 'nonfiction': 'Hello Design World'} }
+
+							# Instead of using index like lists, dictionaries use keys to access values
+							favorite_vegetable = favorites['vegetable']
+							
+							# get all the keys in a dictionary
+							favorite_categories = favorites.keys()
+
+							# get all the values in a dictionary
+							favorite_things = favorites.values()
+
+							# Keep in mind that .keys() and .values() return special types
+							print(favorites.keys())
+							print(type(favorites.keys()))
+							```
+
+							Later, I'll show you how to convert dict_keys and dict_values into lists.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- Dictionaries can have lists and other dictionaries as values.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Manipulating Dictionaries
+
+							Create new items in the dictionary
+
+							```python
+							# Add 1 item to the dictionary
+							favorites = {'vegetable': 'celery', 'fruit': 'apples', 'tv show': 'Leverage', 'number': 16}
+							favorites['dessert'] = 'ice cream'
+							```
+
+							Remove items from the dictionary
+
+							```python
+							# Delete an entry from the dictionary. Specify the key to delete.
+							del favorites['vegetable']
+
+							# Clear the dictionary of all key-value pairs
+							favorites.clear()
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- Print after each demo to show what's happening after each command
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Manipulating Dictionaries
+
+							Update item in dictionary
+
+							```python
+							# Access specific key and assign it a new value
+							favorites['fruit'] = 'orange'
+							print(favorites)
+
+							# Merge a dictionary with another dictionary
+							more_favorites = {'color': 'blue', 'animal': 'cat'}
+							favorites.update(more_favorites)
+							print(favorites)
+							```
+
+							<small><a href="https://realpython.com/python-dicts/" target="_blank">More Info on Dictionaries</a></small>
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Create a Dictionary
+
+							Print your dictionary after each task.
+
+							1. Create a dictionary about yourself.
+							  - For now, just include your last name and first name.
+							2. Add your age to the dictionary.
+							3. Print the values of the dictionary.
+							4. Merge another dictionary into the first dictionary. The new dictionary should hold your eye color and height.
+							5. Remove your height from the dictionary.
+							6. Clear the dictionary.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section class='center' data-background-color='#222222'>
+					<div data-markdown>
+						<textarea data-template>
+							## Decision Making
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- Now that we've covered basic data types, let's talk about decision making in code and how to make things happen.
+					</aside>
+				</section>
+				
+				<section class="center" data-background-color="#222">
+					<div data-markdown>
+						<textarea data-template>
+							## Boolean Variables
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						Earlier, we briefly covered boolean variables, but let's go over them in more detail.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Boolean Variables
+							- Represent logical values: ```True``` and ```False```.
+
+							```python
+							catsAreBest = True
+							dogsRule = False
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+							
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Boolean Variables
+
+							- Some values are considered ```falsy```.
+							- They evaluate to ```False``` in a Boolean context.
+
+							```python
+							# the following variables will evaluate as False
+
+							my_name = '';    # empty string
+							num_of_kids = 0; # 0
+							favorites = []   # empty list
+							person = {}      # empty dictionary
+							```
+
+							- ```None``` will also evaluate as ```False```.
+							- Most everything else evaluates as ```True```.
+							- You can check to see if a value evaluates to True or False
+
+							```python
+							bool(([]))  # False
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+							
+					</aside>
+				</section>
+				<section class="center" data-background-color="#222">
+					<div data-markdown>
+						<textarea data-template>
+							## Control Flow
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+							
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### The `if` statement
+
+							Use ```if``` statements to decide which lines of code to execute, based on a condition.
+
+							```python
+							# Template Code
+							if condition:
+								# statements to execute
+
+							# Example
+							age = 30
+							
+							if age > 18:
+								print('You are an adult')
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+							
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Refresher: Comparison Operators
+
+							| Symbol    | Purpose                                         |
+							| --------- | ----------------------------------------------- |
+							| ```==```  | Tests if LHS is Equal to RHS                    |
+							| ```!=```  | Tests if LHS is Not equal to RHS                |
+							| ```<```   | Tests if LHS is Less than RHS                |
+							| ```>```   | Tests if LHS is Greater than RHS             |
+							| ```<=```  | Tests if LHS is Less than or equal to RHS    |
+							| ```>=```  | Tests if LHS is Greater than or equal to RHS |
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- 1 = allows you to assign values to variables.
+						- 2 equal signs is a comparsion operator.
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Temperature
+
+							- Make a variable called "temperature".
+							- Write some code that tells you to put on a coat if it is below 10 degrees.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+							
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### The `else` statement
+
+							Use ```else``` to provide an alternate set of instructions.
+
+							```python
+							age = 30
+
+							if age >= 16:
+								print('Yay, you can drive!')
+							else:
+								print('Sorry, you have to wait before you can drive.')
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+							
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### The `elif` statement
+
+							If you have multiple conditions, you can use ```elif```.
+
+							```python
+							age = 30
+
+							if age >= 65:
+								print('I am at least 65 years old.')
+							elif age >= 30:
+								print('I am at least 30 years old.')
+							elif age >= 18:
+								print('I am at least 18 years old.')
+							else:
+								print('I am younger than 18 years old.')
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+							The code only goes to the next line if the previous statement was false.
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Modify Temperature Code
+
+							Modify your "wear a coat" code for these conditions:
+							- If it's less than 10 degrees, wear a coat.
+							- If it's less than 0 degrees, wear a coat and a hat.
+							- If it's less than -20 degrees, stay inside.
+							- Otherwise, wear whatever you want.
+
+							**Hint:** Think about the order of your if, elif, and else statements. The test must fail in order to move on to the next test. If a test passes, it won't keep testing later conditions.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+							
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Answer
+
+							```python
+							temperature = 20
+
+							if temperature < -20:
+								print("Stay inside.")
+							elif temperature < 0:
+								print("Wear a coat and hat.")
+							elif temperature < 10:
+								print("Wear a coat.")
+							else:
+								print("Wear whatever you want.")
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Nested `if` Statements
+
+							You can nest if statements to handle even more complex logic.
+
+							```python
+							age = 30
+
+							if age > 30:
+								print("You are older than 30.")
+								if age > 60:
+									print("You are also older than 60.")
+							else:
+								print("You are 30 or younger.")
+							```
+
+							Try not to nest too many if statements or it will make your code hard to read and understand.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Logical Operators
+							
+							```and``` - True if both LHS **and** RHS are True
+
+							```or``` - True if LHS **or** RHS is True
+
+							```not``` - True if operand is **not** True (True if operand is False)
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- The operand is just the left hand or right hand side.
+						- 
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Using Logical Operators
+
+							```python
+							likes_dogs = True
+							likes_cats = True
+
+							# If/Else Statement to check which animals a person likes
+							if likes_dogs and likes_cats:
+								print('I like dogs and cats.')
+							elif likes_dogs or likes_cats:
+								print('I like cats or dogs, but not both.')
+							else:
+								print("I don't like dogs or cats.")
+
+							# If Statement to see if person doesn't like dogs
+							if not likes_dogs:
+								print("They don't like dogs.")
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+							You can use these operators to combine conditions.
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Logical Operators
+
+							- Create two variables (`sunny` and `warm`)
+							- Create an If/Else Statement with the following conditions (you can use `elif`)
+								- If it's sunny and warm, tell them to wear sunglasses and sunscreen.
+								- Otherwise, if it's sunny or warm, tell them to enjoy the half-nice weather.
+								- Otherwise, tell them to wear a jacket.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+							
+					</aside>
+				</section>
+				<section class="center" data-background-color="#222">
+					<div data-markdown>
+						<textarea data-template>
+							## Loops
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						Time to talk about loops which will make your programs even better!
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### `while` loops
+
+							```while``` will repeat the same code over and over while some condition is true.
+
+							```python
+							while (condition is True):
+								# do something
+							```
+
+							```python
+							bottles_of_beer = 99 # initial value to check
+
+
+							while bottles_of_beer > 0:
+								print(bottles_of_beer)
+								bottles_of_beer -= 1
+								# Take 1 away each time. We don't want to get stuck in an infinite loop.
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+							
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### `while` loops continued
+
+							If the user is providing information, they're in control of when the loop stops. This loop will continue over and over until the user enters the right password.
+
+							```python
+							password = ""
+
+							while password != "123456":
+								password = input("What is the password? ")
+							```
+
+							<small><code>input()</code> is a built-in method that allows us to ask the user for information.</small>
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Warning: Infinite Loops
+
+							Make sure something changes in the loop or your loop will go on forever.
+
+							```python
+							bottles_of_beer = 99 # initial value to check
+
+
+							while bottles_of_beer > 0:
+								print(bottles_of_beer)
+							```
+
+							This will print "99" forever because we didn't do anything to change the loop.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+							
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: While Loop
+
+							Write a while loop that prints out the numbers 1 through 10.
+							<hr>
+							**Bonus:** Try printing out the times table by nesting a while loop inside a while loop.
+							- 1x1 = 1
+							- 1x2 = 2
+							- all the way to 10x10 = 100
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+							
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Answers
+
+							```python
+							num = 1
+							num2 = 1
+
+							while num < 11:
+								print(num)
+								num += 1 # increase num by 1 each time so we get closer to 11
+							```
+
+							```python
+							num = 1
+							num2 = 1
+
+							while num < 11:
+								while num2 < 11:
+									print(num*num2)
+									num2 += 1 # increase num2 by 1 each time we get closer to 11
+
+								num2 = 1 # start num2 over at 1 every time we exit the num2 while loop
+								num += 1 # increase num by 1 each time so we get closer to 11
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### `for` loops
+
+							```for``` loops are very similar to `while` loops but they are used for iterating over a collection.
+
+							```python
+							for var in iterable:
+								# do something
+							```
+
+							```python
+							# will count 1 to 10
+							for i in range(1,11):
+								print(i)
+
+							# will loop through a list
+							fruits = ["oranges", "apples", "bananas"]
+							for fruit in fruits:
+								print(fruit)
+
+							# will loop through characters in a string
+							name = "Heather"
+							for letter in name:
+								print(letter)
+							```
+
+							You can also loop through tuples and dictionaries.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+							
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Nested `for` Loops
+
+							You can nest for loops to write more complicated code.
+
+							```python
+							# will loop through a list and print each letter in each string
+							fruits = ["oranges", "apples", "bananas"]
+							for fruit in fruits:
+								for letter in fruit:
+									print(letter)
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: For Loop
+
+							- Create a list `weather` and loop over it to print out different types of weather.
+
+							<hr>
+							**Bonus:** Create a list of lists.
+							- For example:
+
+							```python
+							shopping = [["oranges", "apples"], ["jeans", "shirt"], ["bagels", "muffins"]]
+							```
+							- Use a nested `for` loop to print out each item.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+							
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Answers
+
+							```python
+							weather = ["sun", "rain", "snow", "fog"]
+
+							for type in weather:
+								print(type)
+							```
+
+							```python
+							shopping = [["oranges", "apples"], ["jeans", "shirt"], ["bagels", "muffins"]]
+
+							for category in shopping:
+								for item in category:
+									print(item)
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Loop Control Statements
+
+							There are 3 loop control statements you can use to alter the loop.
+
+							- `break` - Breaks out of the current loop.
+							- `continue` - Loop skips whatever is remaining in that iteration and starts executing the next iteration of the loop.
+							- `pass` - used when you do not want any command or code to execute
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Loop Control Statement Examples
+
+							```python
+							# Breaks out the loop as soon as it gets to the "h"
+							for letter in 'Python':
+								if letter == 'h':
+									break
+								print(letter)
+
+							# Skips h and continues to the next letter
+							for letter in 'Python':
+								if letter == 'h':
+									continue
+								print(letter)
+
+							# Nothing happens when pass is executed. Pass is often used as placeholder code. Eventually, you may do something if the letter is "h".
+							for letter in 'Python':
+								if letter == 'h':
+									pass
+								print(letter)
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Loop Control
+
+							1. Create a list of animal types.
+							2. Loop through the list and print each item.
+							3. Break when you get to the 3rd item in the list.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Loops and Logic
+
+							You can add other statements or logical operators inside loops.
+
+							```python
+							# Count from 1 to 100
+
+							for i in range(1, 101):
+								if i % 3 == 0:
+									# Prints 'Fizz' after multiples of three
+									print(i, 'Fizz')
+								elif i % 5 == 0:
+									# Prints 'Buzz' after multiples of five
+									print(i, 'Buzz')
+								else:
+									print(i)
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- You can use a comma in the print method to print out multiple things at once.
+						- You can use the modulus operator to figure out if numbers are multiples of other numbers.
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Logic in Loops
+
+							- Write a for loop that will iterate from 0 to 20.
+							- For each iteration, check if the current number is even or odd, and print the number and whether it's even or odd.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Converting Between Data Types
+
+							So far, we've been working with numbers or strings, but sometimes we want to combine them.
+
+							For example, maybe we want to print out a number as part of a string.
+
+							```python
+							num = 11
+							item = "apples"
+
+							num_of_items = num + "apples"
+							# TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+							num_of_items = str(num) + "apples" # "11 apples"
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- We can't concatenate numbers with strings. But we can change the number into a string so that we *can* concatenate it.
+						- Notice the extra space that we have to add or else concatenating will just smush the two together.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Type Conversion Methods
+
+							```python
+							# Turn data into an integer
+							string = "10010"
+							num = int(string)
+
+							# Turn data into a floating number
+							floating_num = float(string)
+
+							# Turn data into a tuple
+							tuple = tuple(string)
+
+							# Turn data into a list
+							list = list(string)
+							```
+
+							The `input()` method will always return a string. If you want to do math with numbers entered by the user, you'll need to convert it into a number.
+
+							```python
+							age = input("How old are you? ")
+
+							age_prediction = "You will be " + str(int(age) + 5) + " in 5 years."
+							print(age_prediction)
+							```
+
+							<small><a href="https://www.digitalocean.com/community/tutorials/how-to-convert-data-types-in-python-3" target="_blank">How to Convert Data Types in Python 3</a></small>
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- First, we convert the age into a number so we can add 5 to it. Then we have to turn that number back into a string so we can concatenate it with other strings.
+						- There are even more examples of converting data in the link.
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Magic Trick
+
+							Input any number and I'll predict what you end up with after some math.
+
+							1. Use the `input()` method to enter any number between 1 and 20.
+							2. Add 1 to the number.
+							3. Double the new number.
+							4. Add 4 to the new number.
+							5. Divide the new number by 2.
+							6. Subtract the original number from the new number.
+							7. Print a statement like:
+
+							"The final number is " + final_number.
+
+							Did you get the number 3?
+
+							
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section class="center" data-background-color="#222">
+					<div data-markdown>
+						<textarea data-template>
+							## Functions
+							
+							![](img/lego-blocks.jpg)
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- Functions are separable, reusable pieces of code.
+						- We use functions to prevent writing the same code over and over.
+						- They help us break our programs into small and modular chunks.
+						- Each function should be a group of related statements that perform a specific task.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Declaring Functions
+
+							To declare (create) a function, you can give it a name, then include all the code for the function.
+
+							```python
+							def function_name(parameters):
+								# statements
+							```
+
+							```python
+							def parrotFacts():
+								print('Some parrot species can live for over 80 years.')
+								print('Kakapos are a critically endangered flightless parrot.')
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						Functions can have multiple lines.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Using Functions
+
+							To invoke (use) a function, type its name, followed by a parenthesis ```()```
+
+							```js
+							parrotFacts()
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- A function is a group of code you can reuse many times.
+						- Whenever you call or invoke a function by using it's name, you tell the browser to run the code inside the function.
+						- You must declare a function before you can use it.
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							 ### Activity: Write a Function
+
+							 - Write a function that prints out a sentence.
+							 - Call that function in your code.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Arguments
+
+							Functions can accept input values, called ```arguments```.
+
+							```python
+							def function_name(parameters):
+								# statements
+
+							function_name(arguments)
+							```
+
+							```python
+							def call_kitten(name):
+								print('Come here, ' + name + '!')
+							
+							# prints 'Come here, Fluffy!'
+							call_kitten('Fluffy')
+							```
+
+							```python
+							def add_numbers(a, b):
+								print(a + b)
+							
+							# prints 12
+							add_numbers(5, 7)
+
+							# prints 21
+							add_numbers(9, 12) 
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Arguments
+
+							You can pass ```variables``` into functions.
+
+							```python
+							def add_one(num):
+								new_number = num + 1
+								print('You now have ' + str(new_number))
+							
+							# Declare variables
+							number_kittens = 5
+							number_puppies = 4
+							
+							# Use them in functions
+							add_one(number_kittens)
+							add_one(number_puppies)
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							 ### Activity: Write a Simple Function
+
+							 - Write a simple function to print out a first name and a last name.
+							 - Update the function to accept a first and last name as arguments.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Returning Values
+
+							- So far, we've been printing inside our functions. But really,you should use `return` inside a function.
+							- `return` will allow the function to give back a value to use later.
+
+							```python
+							def square(num):
+								return num * num
+
+							print(square(4)) # prints '16'
+							  
+							square_of_five = square(5) # square_of_five equals '25'
+							```
+
+							```return``` will immediately end a function. No code can follow after a return statement.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							 ### Activity: Return Statements
+
+							 - Add a return statement to your "name" function.
+							 - Use that function to set the value of a variable.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section class='center' data-background-color='#222222'>
+					<div data-markdown>
+						<textarea data-template>
+							## Python Modules
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- Python modules allow us to logically organize all of our Python code.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### What is a module?
+
+							- Modules are used to help organize and compartmentalize code
+							- A Module is like a regular python program but it just contains functions and variables
+							- You can import this file to use it in other programs
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### How to Create a Module
+
+							So far, we've been working in `hello.py`, but now we're going to create new files to hold our modules.
+
+							- Create a new file called `support.py`.
+							- In this file, add the following code:
+
+							```python
+							def add_one(num):
+								return num + 1
+
+							school = "SAIT"
+							```
+
+							- Go back to your `hello.py` file.
+							- At the very top, import the `support` module.
+
+							```python
+							import support
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### How to Create a Module (part 2)
+
+							- Now, you can call the functions and access the variables held in support.py. In `hello.py`, write:
+
+							```python
+							add_to_5 = support.add_one(5)
+							print(add_to_5)
+
+							print(support.school)
+							```
+
+							<small>There's a lot you can do with modules. Read <a href="https://realpython.com/python-modules-packages/">Python Modules and Packages</a> to learn more.</small>
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Create a Module
+
+							1. Create a new file called `greeting.py`.
+							2. Inside that file, write the following code:
+							```python
+							def greet(name):
+								return("Hello " + name)
+							```
+							3. Create a new file called `main.py`.
+							4. Inside this file, import the greeting module.
+							```python
+							import greeting
+							```
+							5. Then, call the greet function inside `main.py`.
+							```python
+							greeting.greet("Heather")
+							```
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Importing Python Modules
+
+							- There are a number of modules built into the [Python Standard Library](https://docs.python.org/3/library/) that we can use to get access to system functionality or standardized solutions.
+							- The Python Standard Library is part of every Python installation.
+
+							Once you find a module you want to use, you can simply import it like we imported the module we wrote.
+
+							```python
+							import math
+
+							# Some of the many methods and constants we get access to once importing
+
+							math.pi         # Gives you the value of pi
+							math.ceil(num)  # Rounds the number up
+							math.floor(num) # Rounds the number down
+							math.sqrt(num)  # Returns the square root of num
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Import a Python Module
+
+							1. Import the math module.
+							2. Create a function that takes a number and multiplies it by pi.
+							3. Return the number rounded up.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Validating Strings
+
+							- One common module import is the `re` module. This allows us to validate our strings and check to see if they have invalid characters.
+							- Provides regular expression matching operations.
+							- This is great for:
+							  - searching for specific characters or phrases
+							  - cleaning data
+							  - validating passwords
+							  - and more!
+
+							```python
+							import re
+							```
+
+							<small>For more information and practice with regular expressions: [https://regexone.com/](https://regexone.com/)</small>
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- We're not going to go into a lot of detail on how to create regular expressions, as that could be a course on its own. You'll likely run into them in the future though.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Validating Strings Example
+
+							Let's say you need to validate names to make sure they only contain lowercase or uppercase letters, or hyphens. You can simplify this process by using regular expressions and the `re` module.
+
+							```python
+							import re
+
+							# ^[A-Z][a-z]*$ is a pattern that checks names to make sure they start with an uppercase letter followed by lowercase letters which may or may not be followed by a hyphen and more letters.
+							valid_expression = re.compile(r'^[A-Z][a-z]*$')
+							
+							# Take the valid_expression and use it to compare to other strings.
+							first_name = valid_expression.match("Taylor")
+							print(first_name) # <re.Match object; span=(0, 14), match='Taylor'> (means it found a match)
+							
+							second_name = valid_expression.match("J@seph")
+							print(second_name) # None (means it didn't find a match)
+							
+							third_name = valid_expression.match("jane")
+							print(second_name) # None (means it didn't find a match)
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- re.compiles Compiles a regular expression pattern into a regular expression object which has methods we can use (like search() and match())
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Use the `re` module
+
+							1. Import the re module into your code
+							2. Compile a regular expression that looks for all uppercase letters ('[A-Z]')
+							3. Use `match()` to test the following strings:
+							  - "HELLO"
+							  - "world"
+							  - "Hello"
+							  - "World"
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section class='center' data-background-color='#222222'>
+					<div data-markdown>
+						<textarea data-template>
+							## File I/O
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- Now that we're more familiar with Python, let's go over Python file operations. More specifically, we're going to cover opening a file, reading from it, writing into it, closing it, and various file methods you should be aware of.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### What is a file?
+
+							- Used to permanently store data on a hard drive, for example.
+								- .txt
+								- .csv
+								- .json
+							- When we want to read from or write to a file, we follow this order of operations:
+								1. Open a file
+								2. Read or write (perform operation)
+								3. Close the file
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Create a Sample .txt File
+
+							For now, we're going to create an example .txt file that we can practice with in a bit.
+							In your folder, create sample.txt and write/save the following lines:
+
+							```txt
+							Hello world! Python is a lot of fun to learn.
+
+							We can do all sorts of things including reading and writing to files.
+
+							Let's get started!
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### How to Open a File
+
+							- Python has a built-in function `open()` used to open a file.
+							- We can specify the mode while opening the file.
+								- `r` - Open a file for reading. (default)
+								- `w` - Open a file for writing. Creates a new file if it doesn't exist. Truncates (empties) the file.
+								- `a` - Opens for appending at the end of the file without truncating it. Creates a new file if it doesn't exist.
+								- `r+` - Opens a file for reading and writing. Starts at beginning of file. Doesn't create a new file if it doesn't exist.
+								- `w+` - Opens a file for writing and reading. Truncates file. Creates a new file if it doesn't exist.
+								- `a+` - Opens a file for both appending and reading. Starts at end of file. Creates new file if it doesn't exist.
+
+							<small>You can also open files in Binary format by adding a `b` after the `r`, `w`, or `a`. To find out more: <a href="https://www.nayuki.io/page/what-are-binary-and-text-files">https://www.nayuki.io/page/what-are-binary-and-text-files</a></small>
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Opening Files
+
+							```python
+							file = open('text.txt')       # Open file in read mode.
+							file = open('text.txt', 'w')  # Open file in write mode.
+							file = open('text.txt', 'r+') # Open file in read+ mode.
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Reading from files
+
+							- Python contains 3 functions to read files:
+								- `read()` - reads the entire file
+								- `readline()` - reads a single line from the file
+								- `readlines()` - reads the entire file line by line
+
+							```python
+							file = open('text.txt')
+							text = file.read()
+							print(text)
+							```
+
+							- `readlines()` is considered much slower and less efficient than `read()`
+							- If you need to read line by line, try a loop
+
+							```python
+							for line in file:
+								print(line)
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- Demonstrate each one. Especially demonstrate multiple lines with readline()
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Reading
+
+							In `hello.py`, try opening and then reading your file in different ways.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Writing to Files
+
+							When writing to a file, any information inside the file already will be overwritten.
+
+							```python
+							file = open('test.txt', 'w')
+
+							file.write("This is a test. Let's write to this file.")
+							```
+
+							We'll need to use `w+` if we want to write AND read from the file.
+
+							```python
+							file = open('test.txt', 'w+')
+							file.write("This is another test.")
+
+							# After writing, the file's current position will be at the end of the file. We'll need to move it back to the beginning.
+							file.seek(0)
+
+							text = file.read()
+							print(text)
+							```
+
+							If you want to check the current position of the file, you can use `file.tell()`.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- Demonstrate writing to a file and then open it in a text editor to show that it has changed.
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Write to a File
+
+							1. Rewrite your code to open the file and write some new text to it instead.
+							2. Seek to the beginning of the file.
+							3. Print the text.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Writing Multiple Lines
+
+							Instead of having to type `file.write()` for each line, we can use `writelines()` with a list of lines we want to add.
+
+							```python
+							todo_list = ["To Do: \n", "Pick up mail\n", "Go to class\n", "Do homework\n"]
+							file = open('test.txt', 'w')
+							file.writelines(todo_list)
+							
+							```
+
+							`\n` is how we tell the program to write a new line.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Write Multiple Lines
+
+							1. Create your own to do list in a list.
+							2. Write to `sample.txt`.
+							3. Open the file in a text editor and verify that you changed the file.
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Appending to Files
+
+							- Appending is very similar to writing, but instead of overwriting the file, you're adding to the existing file.
+
+							```python
+							file = open('test.txt', 'a')
+							file.write("Let's add to the file!")
+							```
+
+							We can use the same `write()` and `writelines()` methods when appending.
+
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Add to Your To-do List
+
+							1. Open `sample.txt`.
+							2. This time, add several more tasks to your to-do list.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Closing a File
+
+							When you're finished with a file, you want to close it so that you clear your memory buffer.
+
+							- This means you will no longer be able to read from the file. You'll have to open it again if you want to do more with it later.
+							
+							```python
+							# Good: Basic method
+							file.close()
+
+							# Better: With statement. Closes file by itself.
+							with open('test.txt') as file:
+								# perform file operations
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section data-background-color='#caedf5'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Close Your File
+
+							You're finished writing your to-do list now, so make sure to close the file.
+
+							Bonus: Rewrite your code to open the file using the `with` statement instead.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Working with CSV
+
+							- CSV files are used to store a large number of variables - or data. (Similar to Excel but very simplified)
+							- CSV - Comma Separated Values
+							- Very useful for importing or exporting spreadsheets and databases
+							- Python has a CSV module you can use to make working with these files even simpler
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- Demonstrate what a CSV file looks like.
+						- Every line in the file is a row and the commas are used to define separate cells.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### CSV Module
+
+							- You can use loop and .split() methods to get data from CSV files.
+							- OR, you can use the CSV module.
+
+							```python
+							import csv
+
+							# Reading to a CSV File
+							with open('sample.csv', 'r') as file:
+								reader = csv.reader(file)
+								for row in reader:
+									print(row)
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Writing with CSV Module
+
+							`writerow()` and `writerows()`
+
+							```python
+							# Writing to a CSV File
+							address = ['Jane','Awesome','210 Rainbow Lane','Calgary','AB','T2A 4E8']
+							
+							with open('sample.csv', 'w') as file:
+								writer = csv.writer(file)
+								writer.writerow(address)
+							
+							# Writing Multiple Lines to a CSV File
+							addresses = [['Jane','Awesome','210 Rainbow Lane','Calgary','AB','T2A 4E8'],['Joe','Canada','1115 Terrace Blvd','Calgary','AB','T2B 4A8']]
+							
+							with open('sample.csv', 'w') as file:
+								writer = csv.writer(file)
+								writer.writerows(addresses)
+							```
+
+							- Writing with Python to CSV adds a blank row between each line
+
+							<small>For more info: <a href="https://docs.python.org/3/library/csv.html">https://docs.python.org/3/library/csv.html</a></small>
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section data-background-color='#67cae159'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Working With Spreadsheets
+
+							1. Download the sample.csv file from BrightSpace
+							2. Print out every row
+							3. Create a new .csv file (in Python) and add a new address to it.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Moving and Deleting Files in Python
+
+							To move, copy, or delete a file in Python, you will need to import the `os` module.
+
+							Let's say we have a file sitting in a folder called d1 and we want to move it to a folder named d2.
+
+							```python
+							import os
+
+							# Create new directory
+							os.mkdir('d2')
+
+							# Move a file by renaming its path
+							# The destination direction needs to exist in order for this to work.
+							os.rename('d1/sample.txt', 'd2/sample.txt')
+
+							# Delete sample.txt
+							os.remove('d2/sample.txt')
+							```
+
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section class='center' data-background-color='#222222'>
+					<div data-markdown>
+						<textarea data-template>
+							## Handling Exceptions
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- We've gone over how to write a lot of code in Python, but it's important to also go over how to handle errors.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### What are Exceptions?
+
+							- Python has many built-in exceptions which forces your program to output an error when something goes wrong.
+							- When an exception occurs, the current process stops and waits for the the exception to be handled. If it isn't handled, the program crashes.
+
+							```python
+							def a():
+								b()
+							
+							def b():
+								c()
+
+							def c():
+								# broken code that causes exception to occur
+								# if exception isn't handled in c, passes exception to b, and then to a
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- If the exception is never handled in a, b, or c, an error message shows up and the program comes to a halt.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Why Should You Handle Exceptions?
+
+							- If you're using an app, do you want the app to completely stop when an error occurs?
+							- Or maybe instead it should handle it or let you know what's going on.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Built-In Exceptions
+
+							Python provides us with quite a few basic exception classes that are already defined and can be used in general cases ([link](https://airbrake.io/blog/python-exception-handling/class-hierarchy)).
+
+							Example:
+							
+							`ImportError` is raised when you try to import a module which does not exist.
+
+							```python
+							import non_existing_module
+							```
+
+							In the console:
+							```console
+							Traceback (most recent call last):
+								File "hello.py", line 1, in <module>
+									import does_not_exist
+							ModuleNotFoundError: No module named 'does_not_exist'							```
+
+							`ModuleNotFoundError` is a subclass of `ImportError`.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Handling Exceptions
+
+							Python handles exceptions using `try` and `except` blocks.
+							- `try` - write the code which might raise an exception.
+							- `exception` - write the code to handle this exception.
+
+							Exception Raised
+
+							```python
+							for i in range(3):
+								print(3/i)
+						
+							print("This doesn't print because the exception was not handled")
+							```
+
+							Handling Exception
+
+							```python
+							try:
+								for i in range(3):
+									print(3/i)
+							except:
+								print("You divided by 0")
+							
+							print('This prints because the exception was handled')
+							```
+
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- 1st, the try clause is executed.
+						- If no exception occurs, the except clause is skipped and execution of the try statement is finished.
+						- If an exception occurs during execution of the try clause, the rest of the clause is skipped. Then the except clause is executed, and then execution continues after the try statement.
+						- If no handler is found, it is an unhandled exception and execution stops with a message.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Multiple Except Blocks
+
+							It is possible to have multiple except blocks for one try block.
+
+							```python
+							a,b=1,0
+							try:
+								print(a/b)
+								print("This won't be printed")
+								print('10'+10)
+							except TypeError:
+								print("You added values of incompatible types")
+							except ZeroDivisionError:
+								print("You divided by 0")
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- Once an exception is encountered, the statements after that in the try block are skipped.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Except Block with Multiple Exceptions
+
+							You can also have one except block handle multiple exceptions.
+
+							```python
+							try:
+								print('10'+10)
+								print(1/0)
+							except (TypeError,ZeroDivisionError):
+								print("Invalid input")
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Generic Except After All Other Excepts
+
+							```python
+							try:
+								print('1'+1)
+								print(ignore)
+								print(1/0)
+							except NameError:
+								print("i does not exist")
+							except ZeroDivisionError:
+								print("Cannot divide by 0")
+							except:
+								print("Something went wrong")
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- First, the program will check to see if a specific except block exists for this error.
+						- Then, it'll go to the default except block.
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### `finally`
+
+							Optionally, you may include a `finally` exception block after the last except block.
+							
+							The code under this block executes no matter what (error or no error).
+
+							```python
+							try:
+								print(1/0)
+							except ValueError:
+								print("This is a value error.")
+							finally:
+								print("This will print no matter what.")
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						- This is a ZeroDivisionError and we're not handling it. But the print statement in the finally block still runs!
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### Managing Files
+
+							`try...finally` is often used for handling files.
+
+							```python
+							try:
+								file = open('test.txt')
+								# perform file operations
+							finally:
+								f.close()
+							```
+
+							You will want to close this file whether or not the operations you performed on it were successful. Finally, makes sure that the file is closed no matter what.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section>
+					<div data-markdown>
+						<textarea data-template>
+							### `raise`
+
+							Sometimes you may want to deal with a situation by raising your own exception.
+
+							Use the most specific Exception that fits your issue ([link](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)).
+
+							```python
+							x = 10
+							if x > 5:
+								raise ValueError('x should not exceed 5.')
+							```
+
+							Otherwise, you can use the generic Exception.
+
+							```python
+							raise Exception('Meaningful message indicating the source of the error')
+							```
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				<section data-background-color='#67cae159'>
+					<div data-markdown>
+						<textarea data-template>
+							### Activity: Exceptions
+
+							1. Write a function to compute 5/0 and use try/except to catch the exceptions.
+							2. Write a function to add any 2 numbers together. Raise an Exception if one of the numbers is 2.
+						</textarea>
+					</div>
+					<aside class='notes' data-markdown>
+						
+					</aside>
+				</section>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+			</div>
+		</div>
+
+		<script src="../../lib/js/head.min.js"></script>
+		<script src="../../js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: '../../plugin/markdown/marked.js' },
+					{ src: '../../plugin/markdown/markdown.js' },
+					{ src: '../../plugin/notes/notes.js', async: true },
+					{ src: '../../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); }},
+					{ src: '../../plugin/line-numbers/line-numbers.js'}
+				],
+				slideNumber: true,
+				history: true,
+				hashOneBasedIndex: true,
+				center: false
+			});
+
+			Reveal.configure({
+				pdfMaxPagesPerSlide: 1
+			});
+        </script>
+	</body>
+</html>
