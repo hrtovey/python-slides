@@ -7,18 +7,18 @@
 		<title>Python</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:400,700|Fira+Mono" rel="stylesheet">
-		<link rel="stylesheet" href="/css/reveal.css">
-		<link rel="stylesheet" href="/css/theme/sait.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sait.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="/lib/css/vs2015.css">
+		<link rel="stylesheet" href="lib/css/vs2015.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? '/css/print/pdf.css' : '/css/print/paper.css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
@@ -2922,8 +2922,8 @@
 			</div>
 		</div>
 
-		<script src="/lib/js/head.min.js"></script>
-		<script src="/js/reveal.js"></script>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
 
 		<script>
 			// More info about config & dependencies:
@@ -2931,11 +2931,11 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				dependencies: [
-					{ src: '/plugin/markdown/marked.js' },
-					{ src: '/plugin/markdown/markdown.js' },
-					{ src: '/plugin/notes/notes.js', async: true },
-					{ src: '/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); }},
-					{ src: '/plugin/line-numbers/line-numbers.js'}
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); }},
+					{ src: 'plugin/line-numbers/line-numbers.js'}
 				],
 				slideNumber: true,
 				history: true,
